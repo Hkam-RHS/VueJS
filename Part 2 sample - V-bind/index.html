@@ -1,0 +1,23 @@
+<html>
+
+<head>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+
+<body>
+<!-- 
+You can use just regular colons without having to declare v-bind every single time.
+For example, if you look at the h1 and img tag, you will just see colons. It is assumed by vue that
+it is v-bind.
+
+-->
+        <div id="app">
+                <h1 :title="title">{{message}}</h1>
+                <img :src="url"  />
+              </div>
+
+    <script src="script2sample.js"></script>
+</body>
+
+</html>

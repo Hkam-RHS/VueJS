@@ -10,13 +10,14 @@
   {{message}}
 </div>
 
-<div id="storeItems">
-    <p v-for="list in goods">
+<div id="storeItems" >
+<p v-for="list in goods">
+        <span class="left">{{list.qty}}</span>
+        <span class="center">{{list.desc}}</span>
+        <span class="right">{{list.price}}</span>
+    
+</p>
        
-        {{list.qty}}
-        {{list.desc}}
-        {{list.price}}
-    </p>
     </div>
 
     <script src="store.js"></script>
